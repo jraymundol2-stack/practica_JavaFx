@@ -8,13 +8,14 @@ package com.practica.productos.modelo;
  *
  * @author umg
  */
+
+
 public class Producto {
-    
     private String nombre;
 
     public Producto(String nombre) {
         if (nombre == null || nombre.trim().isEmpty()) {
-            throw new IllegalArgumentException("¡El nombre no puede estar vacío!");
+            throw new IllegalArgumentException("Nombre inválido");
         }
         this.nombre = nombre;
     }
